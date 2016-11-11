@@ -1,7 +1,7 @@
 <table>
 			<tr style="background: #dddddd; text-transform: uppercase;"><td>Pilot ID</td><td>Name</td><td>Rank</td><td>Miles</td></tr>
 			<?php 
-			foreach ($bds as $bd)
+			foreach ((array)$bds as $bd)
 				{
 					if($bds == '')		
 					{
