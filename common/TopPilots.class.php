@@ -24,7 +24,7 @@ class TopPilots extends CodonData
 									GROUP BY pilotid) t1
 										LEFT JOIN phpvms_pilots t2 ON t1.pilotid = t2.pilotid 
 											ORDER BY distance DESC LIMIT 10";
-											return = DB::get_results($dbm);
+											return DB::get_results($dbm);
 		}
 	
 	public static function BestRevenue()
