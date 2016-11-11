@@ -1,7 +1,7 @@
 <table>
 			<tr style="background: #dddddd; text-transform: uppercase;"><td>Pilot ID</td><td>Name</td><td>Rank</td><td>Hour(s)</td></tr>
 			<?php 
-			foreach ($bfts as $bft)
+			foreach ((array)$bfts as $bft)
 				{
 								$hrs = intval($bft->flighttime);
 								$min = ($bft->flighttime - $hrs) * 100;
